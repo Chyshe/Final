@@ -1,0 +1,156 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    width: 100%;
+    font-family: sans-serif;
+    padding: 2px;
+    background-color:#481414;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    
+    }
+    nav li a {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+    nav ul ul {
+    display: none;
+    }
+    
+    nav ul li:hover > ul {
+    display: block;
+    }
+    
+    nav ul {
+    background: #481414;
+    padding: 0 50px;
+    border-radius: 5px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    }
+    nav ul:after {
+    content: ""; clear: both; display: block;
+    }
+    
+    nav ul li {
+    float: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+    nav ul li:hover {
+    background: #a95d5d;
+    }
+    nav ul li:hover a {
+    color: white;
+    }
+    nav ul li a {
+    display: block;
+    color: white; text-decoration: none;
+    }
+    
+    nav ul ul {
+    background: #a26161;
+    border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+    z-index: 999;
+    }
+    nav ul ul li {
+    float: none;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+    }
+    nav ul ul li a {
+    padding: 15px 40px;
+    color: #fff;
+    }
+    nav ul ul li a:hover {
+    background: #481414;
+    }
+    li{
+    border-right: 1px solid #aaa;
+    }
+    body {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #a95d5d;
+    font-size: large;
+    
+    }
+    h1 {
+    margin-top: 0px;
+    padding: 20px;
+    text-align: center;
+    flex: space-evenly;
+    flex-direction: row;
+    }
+    header{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2em;
+    Color: white;
+    background-color:black;
+    }
+img{
+    width: 75%;
+    flex-direction: column;
+    margin: 20px;
+}
+p{
+    text-align: center;
+}
+    
+    @media screen and (min-width: 599px){
+    ul li{
+    width: 200px;
+    margin:0;
+    padding:0;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    }
+    }
+    
+    @media screen and (max-width: 1150px){
+    ul li{
+    width: 140px;
+    }
+    nav{
+    font-size:medium;
+    }
+    }
+    
+    @media screen and (max-width: 800px){
+    nav ul li{
+    float: none;
+    width: 100%;
+    }
+    nav ul{
+    width: 100%;
+    }
+    nav ul li ul li{
+    display: none;
+    }
+    nav ul li a{
+    border-right: none;
+    line-height: 2em;
+    }
+    li{
+    border-right: none;
+    }
+    }
